@@ -1,0 +1,293 @@
+// header {
+// 	position: sticky;
+// 	left: 0;
+// 	right: 0;
+// 	top: 0;
+// 	background: url("/img/snowy-BG.png"), $blue-gradient;
+// 	z-index: 4;
+
+// 	.centraliser {
+// 		display: flex;
+// 		justify-content: space-between;
+// 		height: $top-nav-height;
+// 		align-items: center;
+	
+// 		.logo {
+// 			width: 125px;
+	
+// 			img {
+// 				width: 100%;
+// 			}
+// 		}
+
+// 		nav {
+// 			ul {
+// 				list-style: none;
+	
+// 				li {
+// 					display: block;
+// 					a {
+// 						font-weight: 400;
+// 						letter-spacing: 0.4px;
+// 						text-decoration: none;
+// 						color: $white;
+		
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+	
+
+// @media only screen and (max-width: 1023px) {
+//    header {
+// 		.centraliser {
+// 			.nav-wrap { 
+// 				position: absolute;
+// 				right: 0;
+// 				width: 100%;
+// 				max-width: 480px;
+// 				top: 100%;
+// 				overflow: hidden;
+	
+// 				nav {
+// 					> ul {
+// 						visibility: hidden;
+// 						flex-direction: column;
+// 						width: 100%;
+// 						opacity: 0;
+// 						box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+// 						transition: all 0.3s ease;
+// 						background: $white;
+// 						// background-image: linear-gradient(270deg, #4bb730 20%, #289e2a);
+// 						margin-top: -30px;
+
+// 						&.active {
+// 							visibility: visible;
+// 							margin-top: 0;
+// 							display: flex;
+// 							opacity: 1;
+// 							transition: all 0.3s ease;
+// 						}
+		
+// 						> li {
+// 							a {
+// 								font-size: 1.25rem;
+// 								padding: 1.25rem 2rem;
+// 								width: 100%;
+// 								text-align: right;
+// 								display: inline-block;
+// 								color: $primary;
+// 							}
+						
+// 							&:last-child a {
+// 								display: none;
+// 							}
+
+// 							.dropdown-content {
+// 								height: auto;
+// 								max-height: 0;
+// 								overflow: hidden;
+// 								background-color: #e8f0fa;
+// 								transition: all 0.2s ease;
+// 							}
+							
+// 							&.dropdown {
+// 								> a {
+									
+// 									&::after {
+// 										content: url("/img/icons/skali-chevron-dark-blue.svg");
+// 										width: 0.4em;
+// 										margin-left: 0.5em;
+// 										display: inline-block;
+// 										position: relative;
+// 										top: 0.1em;
+// 										mask-repeat: no-repeat;
+// 										transform: rotate(0deg);
+// 										transition: all 0.2s ease;
+// 									}
+
+// 									&.active {
+// 										&::after {
+// 											transform: rotate(90deg);
+// 											transition: all 0.1s ease;
+// 										}
+	
+// 										+ .dropdown-wrap {
+// 											.dropdown-content {
+// 												max-height: 100vh;
+// 												overflow: scroll;
+// 												transition: all 0.5s ease;
+// 											}
+// 										}
+// 									}
+// 								}
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+			
+// 			.burger {
+// 				display: block;
+// 				cursor: pointer;
+// 				background: transparent;
+// 				border: none;
+	
+// 				.bar {
+// 					display: block;
+// 					width: 25px;
+// 					height: 3px;
+// 					margin: 5px auto;
+// 					transition: all 0.3s ease-in-out;
+// 					background-color: $white;
+// 				}
+	
+// 				&.active {
+// 					.bar {
+// 						&:nth-child(2) {
+// 							opacity: 0;
+// 						}
+// 						&:nth-child(1) {
+// 							transform: translateY(8px) rotate(45deg);
+// 						}
+// 						&:nth-child(3) {
+// 							transform: translateY(-8px) rotate(-45deg);
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+//    }
+// }
+
+// @media only screen and (min-width: 481px) {
+//    header {
+//       .nav-wrap { 
+//          ul {
+//             border-radius: 0 0 0 12px;
+//          }
+//       }
+//    }
+// }
+
+// @media only screen and (min-width: 1024px) {
+//    header {
+// 		.nav-wrap { 
+// 			height: 100%;
+
+// 			nav {
+// 				height: 100%;
+
+// 				> ul {
+// 					display: flex;
+// 					height: 100%;
+	
+// 					> li {
+// 						position: relative;
+
+// 						> a {
+// 							font-size: 1.125rem;
+// 							padding: 0 2rem;
+// 							height: 100%;
+// 							display: flex;
+// 							align-items: center;
+// 							font-weight: 500;
+// 							transition: all 0.3s ease;
+// 						}
+
+// 						&:hover > a {
+// 							cursor: pointer;
+// 							color: $primary-hover;
+// 							background-color: #e1edff;
+// 							transition: all 0.1s ease;
+// 						}
+	
+// 						&:last-child {
+// 							display: flex;
+// 							align-items: center;
+
+// 							a {
+// 								background: $white;
+// 								color: $primary;
+// 								height: 2.5rem;
+// 								border: 2px solid $white;
+// 								margin-left: 1.5em;
+// 								border-radius: 6px;
+
+// 								&:hover {
+// 										transition: 0.2s ease-in-out;
+// 										background: $primary-hover;
+// 										border: 2px solid $primary-hover;
+// 										color: $white;
+// 								}
+
+// 								&:focus {
+// 										transition: 0.2s ease-in-out;
+// 										background: $primary-hover;
+// 										border: 2px solid $primary-hover;
+// 										color: $white;
+// 								}
+// 							}
+							
+					
+// 						}
+						
+// 						.dropdown-wrap {
+// 							width: auto;
+// 							height: 0;
+// 							position: absolute;
+// 							overflow: hidden;
+// 							visibility: hidden;
+// 							border-radius: 0 0 12px 12px;
+// 							box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2);
+
+// 							.dropdown-content {
+// 								visibility: hidden;
+// 								opacity: 0;
+// 								margin-top: -1rem;
+// 								position: relative;
+// 								transition: all 0.3s ease;
+// 								background-color: #f9f9f9;
+// 								min-width: 320px;
+		
+// 								a {
+// 									color: $primary;
+// 									font-size: 1.125rem;
+// 									padding: 1rem 2rem;
+// 									text-decoration: none;
+// 									display: block;
+									
+// 									&:hover {
+// 										background-color: $primary;
+// 										color: $white;
+// 									}
+// 								}
+// 							}
+// 						}
+
+// 						&:hover .dropdown-wrap {
+// 							visibility: visible;
+// 							height: auto;
+
+// 							.dropdown-content {
+// 								visibility: visible;
+// 								opacity: 1;
+// 								margin-top: 0;
+// 								transition: all 0.3s ease;
+// 							}
+// 						} 
+// 					}
+
+					
+// 				}
+// 			}
+// 		}
+
+//       .burger {
+//          display: none;
+//       }
+//    }
+// }
+

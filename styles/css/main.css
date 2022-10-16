@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+body {
+  margin: 0;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 6rem 0;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 75rem;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h2 {
+  border-bottom: solid 1px #ffffff;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  p {
+    font-size: 1.125rem;
+  }
+}
+.animation-wrap {
+  width: 100%;
+  height: 200px;
+  background-color: #222;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.box1 {
+  width: 2rem;
+  height: 2rem;
+  background-color: #fdf;
+  position: absolute;
+}
+
+.box2 {
+  width: 2rem;
+  height: 2rem;
+  background-color: #fdf;
+  position: absolute;
+}
+
+.move-box {
+  animation: movebox 1s forwards;
+}
+
+@keyframes movebox {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 300px;
+    top: 0px;
+  }
+  50% {
+    left: 300px;
+    top: 150px;
+  }
+  75% {
+    left: 0px;
+    top: 150px;
+  }
+}
+.cloud-wrap {
+  width: 100%;
+  height: 80vh;
+  background-color: #abe;
+  position: relative;
+  margin-bottom: 5rem;
+  overflow: hidden;
+}
+
+.css-cloud {
+  position: relative;
+  width: 320px;
+  height: 100px;
+  background: #ffffff;
+  border-radius: 100px;
+}
+
+.cloud-img {
+  width: 250px;
+  height: 110px;
+  display: inline-block;
+  mask-size: cover !important;
+  position: absolute;
+  left: -50vw;
+  mask: url("/images/remembot-cloud-01.svg");
+}
+
+@keyframes moveCloud01-A {
+  0% {
+    left: -50vw;
+  }
+  100% {
+    left: 110vw;
+  }
+}
+@keyframes moveCloud01-B {
+  0% {
+    left: -50vw;
+  }
+  100% {
+    left: 110vw;
+  }
+}
+@keyframes moveCloud02-A {
+  0% {
+    left: -50vw;
+  }
+  100% {
+    left: 110vw;
+  }
+}
+@keyframes moveCloud02-B {
+  0% {
+    left: -50vw;
+  }
+  100% {
+    left: 110vw;
+  }
+}
+@keyframes moveCloud03-A {
+  0% {
+    left: -50vw;
+  }
+  100% {
+    left: 110vw;
+  }
+}
+@keyframes moveCloud03-B {
+  0% {
+    left: -50vw;
+  }
+  100% {
+    left: 110vw;
+  }
+}
+@keyframes moveCloud04-A {
+  0% {
+    left: -50vw;
+  }
+  100% {
+    left: 110vw;
+  }
+}
+@keyframes moveCloud04-B {
+  0% {
+    left: -50vw;
+  }
+  100% {
+    left: 110vw;
+  }
+}
+@keyframes moveCloud05-A {
+  0% {
+    left: -50vw;
+  }
+  100% {
+    left: 110vw;
+  }
+}
+@keyframes moveCloud05-B {
+  0% {
+    left: -50vw;
+  }
+  100% {
+    left: 110vw;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

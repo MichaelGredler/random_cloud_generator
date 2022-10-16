@@ -1,0 +1,44 @@
+.animation-wrap {
+   width: 100%;
+   height: 200px;
+   background-color: #222;
+   position: relative;
+   margin-bottom: 3rem;
+}
+
+.box1 {
+   width: 2rem;
+   height: 2rem;
+   background-color: #fdf;
+   position: absolute;
+}
+
+.box2 {
+   width: 2rem;
+   height: 2rem;
+   background-color: #fdf;
+   position: absolute;
+}
+
+.move-box {
+   animation: movebox 1s forwards;
+}
+
+@keyframes movebox {
+   0% {
+      left: 0px;
+      top: 0px;
+    }
+    25% {
+      left: 300px;
+      top: 0px;
+    }
+    50% {
+      left: 300px;
+      top: 150px;
+    }
+    75% {
+      left: 0px;
+      top: 150px;
+    }
+  }

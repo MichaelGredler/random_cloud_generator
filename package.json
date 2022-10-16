@@ -1,0 +1,26 @@
+{
+  "name": "state_management",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "build-sass": "sass styles/scss:styles/css",
+    "watch-sass": "sass --watch styles/scss:styles/css"
+  },
+  "dependencies": {
+    "next": "12.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "sass": "^1.54.9",
+    "use-context-selector": "^1.4.1",
+    "zustand": "^4.1.1"
+  },
+  "devDependencies": {
+    "eslint": "8.23.1",
+    "eslint-config-next": "12.3.0"
+  }
+}
