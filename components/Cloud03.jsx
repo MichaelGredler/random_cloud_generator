@@ -7,7 +7,7 @@ const Cloud03 = () => {
 
    const [animationName03, setAnimationName03] = useState(true);
    const [animationDelay03, setAnimationDelay03] = useState("4")
-   const [animationDuration03, setAnimationDuration03] = useState("40")
+   const [animationDuration03, setAnimationDuration03] = useState("30")
    const [color03, setColor03] = useState("255")
    const [scale03, setScale03] = useState("0.75")
    const [top03, setTop03] = useState("17")
