@@ -6,9 +6,9 @@ const Cloud04 = () => {
    const { randDelay, randColor, randTop, randScale, randDuration} = cloudPropFunctions;
 
    const [animationName04, setAnimationName04] = useState(true);
-   const [animationDelay04, setAnimationDelay04] = useState("1.5")
+   const [animationDelay04, setAnimationDelay04] = useState("6")
    const [animationDuration04, setAnimationDuration04] = useState("50")
-   const [color04, setColor04] = useState("255")
+   const [color04, setColor04] = useState("250")
    const [scale04, setScale04] = useState("2.25")
    const [top04, setTop04] = useState("40")
 
@@ -16,7 +16,7 @@ const Cloud04 = () => {
       console.log("handleEndCloud04");
       setAnimationDelay04(randDelay(0, 3));
       setColor04(randColor(240, 255));
-      setTop04(randTop(0, 50));
+      setTop04(randTop(-5, 50));
       setScale04(randScale(50, 200));
       setAnimationDuration04(randDuration(30, 75));
       setAnimationName04(!animationName04);

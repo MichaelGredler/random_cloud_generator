@@ -7,16 +7,16 @@ const Cloud01 = () => {
 
    const [animationName01, setAnimationName01] = useState(true);
    const [animationDelay01, setAnimationDelay01] = useState("0")
-   const [animationDuration01, setAnimationDuration01] = useState("5")
+   const [animationDuration01, setAnimationDuration01] = useState("20")
    const [color01, setColor01] = useState("255")
-   const [scale01, setScale01] = useState("1.2")
+   const [scale01, setScale01] = useState("1.5")
    const [top01, setTop01] = useState("10")
 
    const handleEndCloud01 = (e) => {
       console.log("handleEndCloud01");
       setAnimationDelay01(randDelay(0, 3));
       setColor01(randColor(240, 255));
-      setTop01(randTop(0, 50));
+      setTop01(randTop(-5, 50));
       setScale01(randScale(50, 200));
       setAnimationDuration01(randDuration(30, 75));
       setAnimationName01(!animationName01);
@@ -39,6 +39,7 @@ const Cloud01 = () => {
       animationDuration: `${animationDuration01}s`,
       animationDirection: "forwards",
       animationTimingFunction: "linear",
+      // backgroundColor: "red",
       backgroundColor: `rgb(${color01}, ${color01}, ${color01})`,
       transform: `scale(${scale01})`,
       top: `${top01}%`

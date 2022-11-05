@@ -6,17 +6,17 @@ const Cloud03 = () => {
    const { randDelay, randColor, randTop, randScale, randDuration} = cloudPropFunctions;
 
    const [animationName03, setAnimationName03] = useState(true);
-   const [animationDelay03, setAnimationDelay03] = useState("4")
-   const [animationDuration03, setAnimationDuration03] = useState("30")
+   const [animationDelay03, setAnimationDelay03] = useState("7")
+   const [animationDuration03, setAnimationDuration03] = useState("15")
    const [color03, setColor03] = useState("255")
-   const [scale03, setScale03] = useState("0.75")
-   const [top03, setTop03] = useState("17")
+   const [scale03, setScale03] = useState("0.9")
+   const [top03, setTop03] = useState("34")
 
    const handleEndCloud03 = (e) => {
       console.log("handleEndCloud03");
       setAnimationDelay03(randDelay(0, 3));
       setColor03(randColor(240, 255));
-      setTop03(randTop(0, 50));
+      setTop03(randTop(-5, 50));
       setScale03(randScale(50, 200));
       setAnimationDuration03(randDuration(30, 75));
       setAnimationName03(!animationName03);
