@@ -7,7 +7,7 @@ const Cloud05 = () => {
 
    const [animationName05, setAnimationName05] = useState(true);
    const [animationDelay05, setAnimationDelay05] = useState("10")
-   const [animationDuration05, setAnimationDuration05] = useState("13")
+   const [animationDuration05, setAnimationDuration05] = useState("35")
    const [color05, setColor05] = useState("255")
    const [scale05, setScale05] = useState("1.25")
    const [top05, setTop05] = useState("30")
@@ -18,9 +18,8 @@ const Cloud05 = () => {
       setColor05(randColor(240, 255));
       setTop05(randTop(0, 50));
       setScale05(randScale(50, 200));
-      setAnimationDuration05(randDuration(9, 18));
+      setAnimationDuration05(randDuration(30, 75));
       setAnimationName05(!animationName05);
-      e.stopPropagation();
    }
 
    const cloudStyles05 = {

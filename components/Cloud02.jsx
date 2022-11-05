@@ -7,10 +7,10 @@ const Cloud02 = () => {
 
    const [animationName02, setAnimationName02] = useState(true);
    const [animationDelay02, setAnimationDelay02] = useState("0")
-   const [animationDuration02, setAnimationDuration02] = useState("12")
+   const [animationDuration02, setAnimationDuration02] = useState("50")
    const [color02, setColor02] = useState("250")
    const [scale02, setScale02] = useState("2")
-   const [top02, setTop02] = useState("25")
+   const [top02, setTop02] = useState("20")
 
    const handleEndCloud02 = (e) => {
       console.log("handleEndCloud02");
@@ -18,9 +18,8 @@ const Cloud02 = () => {
       setColor02(randColor(240, 255));
       setTop02(randTop(0, 50));
       setScale02(randScale(50, 200));
-      setAnimationDuration02(randDuration(9, 18));
+      setAnimationDuration02(randDuration(30, 75));
       setAnimationName02(!animationName02);
-      e.stopPropagation();
    }
 
    const cloudStyles02 = {

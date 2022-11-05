@@ -7,7 +7,7 @@ const Cloud01 = () => {
 
    const [animationName01, setAnimationName01] = useState(true);
    const [animationDelay01, setAnimationDelay01] = useState("0")
-   const [animationDuration01, setAnimationDuration01] = useState("11")
+   const [animationDuration01, setAnimationDuration01] = useState("35")
    const [color01, setColor01] = useState("255")
    const [scale01, setScale01] = useState("1.2")
    const [top01, setTop01] = useState("10")
@@ -18,7 +18,7 @@ const Cloud01 = () => {
       setColor01(randColor(240, 255));
       setTop01(randTop(0, 50));
       setScale01(randScale(50, 200));
-      setAnimationDuration01(randDuration(9, 18));
+      setAnimationDuration01(randDuration(30, 75));
       setAnimationName01(!animationName01);
       
       // if (e.target === e.currentTarget) {
@@ -29,7 +29,6 @@ const Cloud01 = () => {
       //    handleMakeCloud01();
       // } 
       
-      e.stopPropagation();
       // setCloud01(false);
       // handleMakeCloud01();
    }
